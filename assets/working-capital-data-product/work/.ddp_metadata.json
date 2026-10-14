@@ -1,0 +1,26 @@
+{
+  "derived_dp_name": "WorkingCapital",
+  "source_dp_fqdns": [
+    "sap.s4com:dataProduct:EntryViewJournalEntry:v1.1.3",
+    "sap.s4com:dataProduct:BillingDocument:v1.6.0",
+    "sap.s4com:dataProduct:SupplierInvoice:v1.5.0",
+    "sap.s4com:dataProduct:CompanyCode:v1.9.9",
+    "sap.s4com:dataProduct:ProfitCenter:v1.1.2",
+    "sap.s4com:dataProduct:Customer:v1.2.0",
+    "sap.s4com:dataProduct:Supplier:v1.5.0",
+    "sap.s4com:dataProduct:GeneralLedgerAccount:v1.3.0"
+  ],
+  "applicationNamespace": "c.bdc.7p712k95j9gm6v0kj328bm8k5",
+  "created_at": "2026-10-14T11:06:48Z",
+  "metadata_approved": true,
+  "header": {
+    "name": "WorkingCapital",
+    "title": "Working Capital",
+    "description": "A derived analytical data product that consolidates AP and AR transactional data from SAP S/4HANA Cloud Private Edition with master data dimensions to expose pre-calculated working capital KPIs — Days Sales Outstanding (DSO), Days Payable Outstanding (DPO), and Cash Conversion Cycle (CCC = DSO − DPO) — together with AR open items by aging bucket and AP open items by payment due date. Designed for Accounts Payable and Accounts Receivable teams, consumed by SAP Analytics Cloud via DPQuery for working capital planning.",
+    "type": "derived",
+    "shortDescription": "Consolidated working capital data product covering Accounts Payable, Accounts Receivable, and Cash Conversion Cycle metrics with full master data enrichment for SAP Analytics Cloud planning",
+    "version": "1.0.0",
+    "applicationNamespace": "c.bdc.7p712k95j9gm6v0kj328bm8k5",
+    "responsible": "customer:vendor:Customer"
+  }
+}

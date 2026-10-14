@@ -1,0 +1,10 @@
+apiVersion: solution.sap/v1
+kind: Solution
+
+metadata:
+  name: working-capital-0f1f9
+  version: 1.0.0
+  description: Working Capital data product covering AP, AR, and Cash Conversion Cycle metrics with master data enrichment for SAP Analytics Cloud planning
+
+assets:
+  - ref: ./assets/working-capital-data-product/asset.yaml

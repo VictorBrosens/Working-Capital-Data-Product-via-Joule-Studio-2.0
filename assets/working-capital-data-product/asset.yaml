@@ -1,0 +1,46 @@
+apiVersion: asset.sap/v1
+kind: Asset
+
+metadata:
+  name: working-capital-data-product
+  version: 1.0.0
+
+type: data-product
+
+sourceRoot: "."
+
+provides:
+  data:
+    name: working-capital-data-product
+    kind: data-product
+    ordId: c.bdc.7p712k95j9gm6v0kj328bm8k5:dataProduct:WorkingCapital:v1
+    format: interop
+
+requires:
+  - name: entry-view-journal-entry
+    kind: apiResource
+    ordId: sap.s4com:apiResource:EntryViewJournalEntry:v1
+  - name: billing-document
+    kind: apiResource
+    ordId: sap.s4com:apiResource:BillingDocument:v1
+  - name: supplier-invoice
+    kind: apiResource
+    ordId: sap.s4com:apiResource:SupplierInvoice:v1
+  - name: company-code
+    kind: apiResource
+    ordId: sap.s4com:apiResource:CompanyCode:v1
+  - name: profit-center
+    kind: apiResource
+    ordId: sap.s4com:apiResource:ProfitCenter:v1
+  - name: customer
+    kind: apiResource
+    ordId: sap.s4com:apiResource:Customer:v1
+  - name: supplier
+    kind: apiResource
+    ordId: sap.s4com:apiResource:Supplier:v1
+  - name: general-ledger-account
+    kind: apiResource
+    ordId: sap.s4com:apiResource:GeneralLedgerAccount:v1
+
+production:
+  definitionFile: WorkingCapital.dpd
